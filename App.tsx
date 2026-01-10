@@ -15,7 +15,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col max-w-4xl mx-auto bg-stone-100 shadow-2xl overflow-x-hidden border-x border-stone-300">
       <Header 
-        title={view.type === 'reader' ? view.data.name : "مصحف المدينة المنورة"} 
+        title={view.type === 'reader' ? view.data.name : "مصحف تجريبي ليس للنشر"} 
         onBack={() => setView({ type: 'home', data: null })}
         showBack={view.type === 'reader'}
       />
@@ -64,9 +64,7 @@ const App: React.FC = () => {
             <div className="bg-amber-900/5 p-8 rounded-[2rem] border-2 border-amber-100 text-center space-y-4">
               <h3 className="text-amber-900 font-bold text-xl">عن التطبيق</h3>
               <p className="text-amber-800/80 leading-relaxed">
-                تطبيق إسلامي يهدف لتوفير تجربة قراءة تحاكي مصحف المدينة المنورة مع إمكانية تفسير الآيات ميسراً بالذكاء الاصطناعي.
-                <br />
-                <span className="mt-4 block font-bold text-amber-900 text-lg">برمجة الدكتور عدنان ساعاتي</span>
+                تطبيق إسلامي يهدف لتوفير تجربة قراءة تحاكي المصاحف الورقية مع إمكانية تفسير الآيات ميسراً بالذكاء الاصطناعي.
               </p>
             </div>
           </div>
@@ -76,8 +74,8 @@ const App: React.FC = () => {
       </main>
 
       <footer className="p-6 text-center border-t border-stone-200 bg-white/50">
-        <p className="text-sm text-stone-500 font-serif">
-          ﴿ ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ ﴾
+        <p className="text-sm text-stone-500">
+          نسخة تجريبية
         </p>
       </footer>
     </div>
